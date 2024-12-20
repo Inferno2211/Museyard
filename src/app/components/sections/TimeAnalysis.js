@@ -1,6 +1,6 @@
 const { Calendar, Clock } = require("lucide-react");
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, LineChart, Line } from 'recharts';
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/Card';
+import { Card, CardContent, CardHeader, CardTitle } from '@ui/Card';
 
 const TimeInsights = ({ hourlyData, daily_patterns, dayPatterns, activityBursts }) => {
     const dayData = Object.entries(daily_patterns).map(([day, count]) => ({
