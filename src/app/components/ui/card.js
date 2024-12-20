@@ -1,7 +1,6 @@
 import * as React from "react"
 
-// Card Components
-export function Card({ className, ...props }) {
+export const Card = ({ className, ...props }) => {
     return (
         <div
             className={`rounded-lg border bg-card text-card-foreground shadow-sm ${className}`}
@@ -10,11 +9,11 @@ export function Card({ className, ...props }) {
     )
 }
 
-export function CardHeader({ className, ...props }) {
+export const CardHeader = ({ className, ...props }) => {
     return <div className={`flex flex-col space-y-1.5 p-6 ${className}`} {...props} />
 }
 
-export function CardTitle({ className, ...props }) {
+export const CardTitle = ({ className, ...props }) => {
     return (
         <h3
             className={`text-2xl font-semibold leading-none tracking-tight ${className}`}
@@ -23,6 +22,6 @@ export function CardTitle({ className, ...props }) {
     )
 }
 
-export function CardContent({ className, ...props }) {
+export const CardContent = ({ className, ...props }) => {
     return <div className={`p-6 pt-0 ${className}`} {...props} />
-}
+};
