@@ -1,6 +1,6 @@
 import ThemeNetwork from "../Theme";
 
-const { CardContent, CardTitle, CardHeader, Card } = require("../ui/Card");
+import { CardContent, CardTitle, CardHeader, Card } from "../ui/Card";
 
 const ThemeAnalysis = ({ themes, topicEvolution }) => {
     const sortedThemes = [...themes].sort((a, b) => b.frequency - a.frequency);
