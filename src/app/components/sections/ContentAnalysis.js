@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { ExternalLink, MessageSquare, CheckSquare } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@ui/Card';
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 const ContentAnalysis = ({ extractedElements }) => {
     const [activeSection, setActiveSection] = useState('urls');

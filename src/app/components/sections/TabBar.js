@@ -1,5 +1,5 @@
 import React from 'react';
-import { TabsList, TabsTrigger } from '@ui/Card';
+import { TabsList, TabsTrigger } from "../ui/card";
 
 const TABS = [
   { value: 'overview', label: 'Overview' },
